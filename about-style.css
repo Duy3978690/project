@@ -117,7 +117,7 @@
     content: "";
     width: 0;
     height: 3px;
-    background-color: #fff;
+    background-image: linear-gradient(to right bottom, rgb(255, 238, 0), rgb(0, 255, 128));
     position: absolute;
     bottom: -4px;
     right: 0;
@@ -126,6 +126,7 @@
     transition-duration: 0.25s;
     transition-timing-function: ease-out;
   }
+
   
   #navbar li a:hover::after, 
   #navbar li a:focus::after{
@@ -138,6 +139,7 @@
   #navbar li a.active::after{
     width: 100%;
     height: 2px;
+    background-image: linear-gradient(to right bottom, rgb(255, 238, 0), rgb(0, 255, 128));
   }
   
   #navbar li a:active{
@@ -534,6 +536,7 @@
 
   #modeIndicator {
     color: rgb(162, 255, 0);
+    user-select: none;
   }
   #modeIndicator.dark-mode {
     color: rgb(162, 255, 0);
